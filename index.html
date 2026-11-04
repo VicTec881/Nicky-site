@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24132f">
+  <meta name="description" content="A little corner of the internet made to celebrate a very special 21st birthday.">
+  <title>Happy 21st Birthday, Birthday Queen! ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+  <header class="topbar">
+    <a class="brand" href="#">✨ A DAY FOR YOU</a>
+    <span class="top-note">November 4 · Your special day</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">IT'S YOUR DAY, YOUR MAJESTY</p>
+        <h1>Happy <span>21st</span><br>Birthday! 🎂</h1>
+        <p class="intro">Today the world gets to celebrate the beautiful soul, bright smile, and wonderful energy that you bring into it.</p>
+        <button class="gold-button" id="surpriseBtn">Open your little surprise <span>♡</span></button>
+        <p class="scroll-hint">A little celebration made just for you ↓</p>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-frame">
+          <img src="birthday-girl.jpg" alt="Birthday girl smiling and holding her 21st birthday cake">
+        </div>
+        <div class="photo-sticker">21<br><small>& fabulous</small></div>
+        <div class="caption">That smile deserves its own celebration ✨</div>
+      </div>
+    </section>
+
+    <section class="message-section">
+      <div class="section-label">A NOTE FOR YOU</div>
+      <h2>Twenty-one looks<br><em>beautiful on you.</em></h2>
+      <p class="birthday-note">May this new chapter bring you the kind of happiness that makes your cheeks hurt from smiling, the courage to chase every dream, genuine people, unforgettable memories, and countless reasons to be grateful. Keep shining, keep laughing, and never forget how special you are.</p>
+      <div class="signature">With love &amp; lots of birthday wishes <span>♥</span></div>
+    </section>
+
+    <section class="fun-section">
+      <div class="fun-card">
+        <div class="cake-icon">🎂</div>
+        <p class="section-label">THE OFFICIAL BIRTHDAY REPORT</p>
+        <h2>21 with no kids…<br><em>just vibes and cake.</em></h2>
+        <p>May your cake be sweet, your problems be tiny, your pockets be happy, and your camera roll be full of beautiful memories.</p>
+        <button class="outline-button" id="confettiBtn">Celebrate again ✨</button>
+      </div>
+    </section>
+
+    <section class="wishes-section">
+      <p class="section-label">LEAVE A LITTLE LOVE</p>
+      <h2>Birthday wishes <em>for you</em></h2>
+      <p class="wishes-intro">Add a message to the wish wall and make her day a little brighter.</p>
+      <form id="wishForm" class="wish-form">
+        <input id="senderName" type="text" maxlength="35" placeholder="Your name" required>
+        <textarea id="wishMessage" rows="3" maxlength="280" placeholder="Write her a birthday wish..." required></textarea>
+        <button class="gold-button" type="submit">Send birthday love 💌</button>
+      </form>
+      <p class="privacy-note">Wishes are saved in this browser only. Connect a shared database if you want everyone to see the same wish wall.</p>
+      <div id="wishWall" class="wish-wall" aria-live="polite">
+        <div class="empty-state">💌 Your message could be the first one here.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with love, smiles &amp; a little sparkle. <span>♥</span>
+  </footer>
+
+  <div class="surprise-modal" id="surpriseModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close-modal" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-emoji">💐✨</div>
+      <p class="section-label">A LITTLE REMINDER</p>
+      <h2>You are loved.<br><em>You are celebrated.</em></h2>
+      <p>Never dim your light to make the world comfortable. Keep being wonderfully, unapologetically you. Happy birthday! ❤️</p>
+      <button class="gold-button" id="modalCelebrate">Let the celebration begin!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

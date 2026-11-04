@@ -1,0 +1,60 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--plum:#24132f;--plum2:#3b2447;--cream:#fff9f0;--gold:#e8bd75;--pink:#e8a8b5;--ink:#2b1b31}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+.topbar{height:76px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:var(--plum);color:#fff}
+.brand{font-weight:700;letter-spacing:2px;font-size:.8rem;color:var(--gold);text-decoration:none}
+.top-note{font-size:.8rem;color:#e9dce9}
+.hero{min-height:650px;background:radial-gradient(circle at 15% 20%,#563b5e 0,transparent 34%),linear-gradient(125deg,#24132f,#3b2447);color:white;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px;padding:65px 10% 85px;position:relative}
+.hero-copy{max-width:540px;z-index:1}
+.eyebrow,.section-label{font-size:.72rem;letter-spacing:3px;font-weight:700;color:var(--gold);margin-bottom:20px}
+h1,h2{font-family:"Playfair Display",serif}
+h1{font-size:clamp(3.7rem,7vw,6.6rem);line-height:1.02;letter-spacing:-2px;margin-bottom:25px}
+h1 span{color:var(--gold)}
+.intro{font-size:1.05rem;line-height:1.8;color:#e8dce9;max-width:470px;margin-bottom:30px}
+.gold-button{border:0;background:var(--gold);color:#2a1830;border-radius:999px;padding:15px 25px;font:700 .95rem "DM Sans",sans-serif;cursor:pointer;box-shadow:0 8px 25px #0002;transition:.2s}
+.gold-button:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0003}
+.gold-button span{font-size:1.1rem;margin-left:8px}
+.scroll-hint{margin-top:45px;color:#cbb9ce;font-size:.8rem}
+.portrait-wrap{position:relative;max-width:440px;justify-self:center}
+.portrait-frame{padding:12px;border:1px solid #e8bd7580;border-radius:220px 220px 25px 25px;background:#ffffff12;transform:rotate(2deg);box-shadow:0 25px 70px #10081880}
+.portrait-frame img{display:block;width:100%;height:510px;object-fit:cover;object-position:center 42%;border-radius:210px 210px 18px 18px}
+.photo-sticker{position:absolute;right:-28px;top:65px;background:var(--gold);color:var(--plum);width:95px;height:95px;border-radius:50%;display:grid;place-content:center;text-align:center;font:800 1.8rem "Playfair Display";transform:rotate(9deg);box-shadow:0 8px 25px #0003}
+.photo-sticker small{font:600 .62rem "DM Sans"}
+.caption{position:absolute;bottom:22px;left:-45px;background:#fff9f0;color:var(--plum);padding:13px 18px;border-radius:8px;font-size:.78rem;box-shadow:0 8px 25px #0002;transform:rotate(-4deg)}
+.sparkle{position:absolute;color:var(--gold);z-index:2;pointer-events:none}.sparkle-one{top:140px;left:5%;font-size:2rem}.sparkle-two{top:420px;right:5%;font-size:3rem}
+.message-section{text-align:center;padding:105px 22px 95px;max-width:850px;margin:auto}
+.message-section .section-label,.wishes-section .section-label{color:#a87939}
+h2{font-size:clamp(2.4rem,5vw,4rem);line-height:1.15;color:var(--plum)}
+h2 em{color:#b27c49;font-weight:600}
+.birthday-note{max-width:690px;margin:28px auto 22px;line-height:1.95;color:#66596a;font-size:1rem}
+.signature{font-family:"Playfair Display",serif;font-style:italic;color:#8e647f;font-size:1.1rem}.signature span,footer span{color:#c67a91}
+.fun-section{background:#f1e6eb;padding:75px 20px;text-align:center}
+.fun-card{max-width:690px;margin:auto;background:#fffaf5;padding:55px 35px;border-radius:22px;box-shadow:0 15px 50px #4c2c4410;border:1px solid #ead8dd}
+.cake-icon{font-size:2.8rem;margin-bottom:15px}
+.fun-card .section-label{color:#a87939}
+.fun-card h2{font-size:clamp(2.2rem,4vw,3.2rem)}
+.fun-card>p:not(.section-label){color:#766779;line-height:1.8;margin:20px auto 25px;max-width:520px}
+.outline-button{border:1px solid #b27c49;background:transparent;color:#694a69;border-radius:999px;padding:13px 22px;font:700 .9rem "DM Sans";cursor:pointer;transition:.2s}
+.outline-button:hover{background:#f4e7df}
+.wishes-section{text-align:center;padding:100px 20px 110px}
+.wishes-intro{color:#766779;margin:16px 0 28px}
+.wish-form{max-width:590px;margin:0 auto;display:grid;gap:13px}
+.wish-form input,.wish-form textarea{width:100%;border:1px solid #e2d4dc;border-radius:12px;background:#fff;padding:15px 17px;font: .95rem "DM Sans";color:var(--ink);outline:none}
+.wish-form input:focus,.wish-form textarea:focus{border-color:#b27c49;box-shadow:0 0 0 3px #e8bd7530}
+.wish-form textarea{resize:vertical}
+.wish-form .gold-button{justify-self:center}
+.privacy-note{font-size:.72rem;color:#96899a;margin:14px auto 30px;max-width:590px;line-height:1.5}
+.wish-wall{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;text-align:left}
+.empty-state{grid-column:1/-1;color:#a18d9e;background:#fff;border:1px dashed #dfcdd8;padding:28px;border-radius:14px;text-align:center}
+.wish-card{background:white;padding:20px;border-radius:14px;border:1px solid #f0e4e9;box-shadow:0 8px 25px #4c2c4408;overflow-wrap:anywhere}
+.wish-card p{color:#625568;line-height:1.65;font-size:.9rem}.wish-card strong{display:block;color:#8e647f;margin-top:14px;font-size:.83rem}
+footer{background:var(--plum);color:#d9cbdc;text-align:center;padding:25px;font-size:.8rem}
+.surprise-modal{position:fixed;inset:0;background:#160d1dcc;display:none;place-items:center;padding:20px;z-index:10}
+.surprise-modal.show{display:grid}
+.modal-card{position:relative;max-width:480px;width:100%;background:var(--cream);border-radius:22px;padding:48px 32px;text-align:center;box-shadow:0 25px 80px #0005;animation:pop .35s ease}
+.modal-emoji{font-size:2.7rem;margin-bottom:18px}.modal-card .section-label{color:#a87939}
+.modal-card h2{font-size:2.5rem}.modal-card>p:not(.section-label){color:#766779;line-height:1.8;margin:18px 0 24px}
+.close-modal{position:absolute;right:17px;top:12px;border:0;background:none;font-size:2rem;color:#8c7c8d;cursor:pointer}
+@keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
+@media(max-width:760px){.topbar{height:65px;padding:0 5%}.top-note{font-size:.68rem}.hero{grid-template-columns:1fr;padding:60px 7% 75px;gap:50px;text-align:center}.hero-copy{margin:auto}.intro{margin-left:auto;margin-right:auto}.scroll-hint{margin-top:28px}.portrait-wrap{width:min(82%,360px)}.portrait-frame img{height:420px}.caption{left:-22px}.photo-sticker{right:-25px;width:80px;height:80px;font-size:1.5rem}.sparkle-one{top:100px}.sparkle-two{top:680px}.message-section{padding:75px 24px}.fun-section{padding:55px 15px}.fun-card{padding:42px 22px}.wishes-section{padding:75px 18px}}
